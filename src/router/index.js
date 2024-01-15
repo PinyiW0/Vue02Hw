@@ -14,12 +14,12 @@ const router = createRouter({
           path: '/ProductList',
           name: 'ProductListView',
           component: () => import('../views/ProductListView.vue')
-        },
-        {
-          path: '/',
-          name: 'home',
-          component: () => import('../views/LoginView.vue')
-        },
+        }
+        // {
+        //   path: '/',
+        //   name: 'home',
+        //   component: () => import('../views/LoginView.vue')
+        // },
     // {
     //   path: '/about',
     //   name: 'about',
