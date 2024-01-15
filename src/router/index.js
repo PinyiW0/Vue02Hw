@@ -3,7 +3,7 @@ import LoginView from '../views/LoginView.vue';
 import ProductList from '../views/ProductListView.vue';
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(), //import.meta.env.BASE_URL
   routes: [
         {
           path: '/LoginView',
@@ -14,12 +14,12 @@ const router = createRouter({
           path: '/ProductList',
           name: 'ProductListView',
           component: () => import('../views/ProductListView.vue')
-        }
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView
-    // },
+        },
+        {
+          path: '/',
+          name: 'home',
+          component: () => import('../views/LoginView.vue')
+        },
     // {
     //   path: '/about',
     //   name: 'about',

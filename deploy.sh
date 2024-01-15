@@ -9,21 +9,18 @@ npm run build
 # navigate into the build output directory
 cd dist
 
-# place .nojekyll to bypass Jekyll processing
-echo > .nojekyll
-
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
 git init
-git checkout -B main
+git checkout -b main
 git add -A
 git commit -m 'deploy'
 
-# if you are deploying to https://<PinyiW0>.github.io
-# git push -f git@github.com:<PinyiW0>/<PinyiW0>.github.io.git main
+# if you are deploying to https://PinyiW0.github.io
+# git push -f git@github.com:PinyiW0/PinyiW0.github.io.git main
 
-# if you are deploying to https://<PinyiW0>.github.io/vue0113
-git push -f https://github.com/PinyiW0/vue0113.git main:gh-pages
+# if you are deploying to https://PinyiW0.github.io/Vue02Hw
+git push -f git@github.com:PinyiW0/Vue02Hw.git main:gh-pages
 
 cd -
